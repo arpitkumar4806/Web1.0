@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Day Finder</title>
+        <link rel="stylesheet" href="./assets/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <h1 class="logo">Day Finder</h1>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="section">
+                <form id="form">
+                    <h1 class="title">Enter Date :</h1>
+                    <div class="formFields">
+                        <label for="date" class="fieldGroup"
+                            >Date<input
+                                required
+                                type="number"
+                                min="1"
+                                max="31"
+                                step="1"
+                                id="date"
+                                class="formInputs"
+                                placeholder="Enter Date"
+                        /></label>
+                        <label for="month" class="fieldGroup"
+                            >Month<input
+                                required
+                                type="number"
+                                min="1"
+                                max="12"
+                                step="1"
+                                id="month"
+                                class="formInputs"
+                                placeholder="Enter Month"
+                        /></label>
+                        <label for="year" class="fieldGroup"
+                            >Year<input
+                                required
+                                type="number"
+                                min="1"
+                                max=""
+                                step="1"
+                                id="year"
+                                class="formInputs"
+                                placeholder="Enter Year"
+                        /></label>
+                    </div>
+                    <button class="button" type="submit">Find Day</button>
+                </form>
+                <p id="result" class="result"></p>
+            </section>
+        </main>
+        <footer class="footer">
+            <p><strong>&copy; Copyright | Day Finder</strong></p>
+        </footer>
+        <script src="./assets/script.js"></script>
+    </body>
+</html>

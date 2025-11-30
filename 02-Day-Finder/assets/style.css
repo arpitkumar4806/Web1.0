@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 6vh 94vh 4vh;
+    grid-template-areas: "header", "main", "footer";
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+/* Header */
+.header {
+    grid-area: "header";
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 2vh;
+    box-shadow: 0 1px 4px gray;
+}
+
+/* Main */
+.main {
+    grid-area: "main";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section {
+    width: 90vw;
+    padding: 2rem;
+    border: 1px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 12px gray;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.formFields {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.fieldGroup {
+    flex: 1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.formInputs {
+    width: 100%;
+    padding: 0.8rem 0rem;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.formInputs:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px gray;
+}
+
+.button {
+    width: max-content;
+    padding: 0.7rem 1rem;
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    background-color: #3e6ff4;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.button:hover {
+    box-shadow: 0px 2px 10px #3e6ff4;
+}
+
+.result {
+    height: 3rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    grid-area: "footer";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid lightgray;
+}
