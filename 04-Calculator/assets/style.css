@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-rows: 6vh 94vh 4vh;
+    grid-template-areas: "header", "main", "footer";
+}
+
+/* Header */
+.header {
+    grid-area: "header";
+    padding: 0 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    box-shadow: 0 1px 4px gray;
+}
+
+/* Main */
+.main {
+    grid-area: "main";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    display: grid;
+    grid-template-rows: minmax(80px, auto) repeat(5, 60px);
+    grid-template-columns: repeat(5, 60px);
+    justify-content: center;
+    padding: 1.4rem;
+    border-radius: 12px;
+    gap: 0.7rem;
+}
+
+.calculator button {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #3e6ff4;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px gray;
+    cursor: pointer;
+}
+
+.calculator button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px gray;
+}
+
+.span2 {
+    grid-column: span 2;
+}
+
+.calculator > .output {
+    grid-column: 1/ -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #3e6ff4;
+    background-color: white;
+    border: none;
+    border-radius: inherit;
+    box-shadow: 0 4px 12px gray;
+}
+
+.display {
+    border: none;
+    height: 60px;
+    width: 300px;
+    text-align: right;
+    word-break: break-all;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #3e6ff4;
+    background-color: white;
+}
+
+.operation {
+    background-color: #e3e9fd;
+    color: #1a3fa6;
+    font-weight: bold;
+}
+
+.memory {
+    background-color: #fdf5e3;
+    color: #a67c1a;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    grid-area: "footer";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid lightgray;
+}

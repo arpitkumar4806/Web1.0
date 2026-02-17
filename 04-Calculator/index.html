@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./assets/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <h1 class="logo">Calculator</h1>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="calculator">
+                <div class="output">
+                    <input type="text" id="result" class="display" />
+                </div>
+                <button onke onclick="clearDisplay()" class="span2 clear">
+                    AC
+                </button>
+                <button onclick="deleteFromDisplay()" class="delete">
+                    DEL
+                </button>
+                <button onclick="addToDisplay('/')" class="operation">/</button>
+                <button onclick="addToDisplay('(')" class="operation">(</button>
+                <button onclick="addToDisplay('1')" class="number">1</button>
+                <button onclick="addToDisplay('2')" class="number">2</button>
+                <button onclick="addToDisplay('3')" class="number">3</button>
+                <button onclick="addToDisplay('+')" class="operation">+</button>
+                <button onclick="addToDisplay(')')" class="operation">)</button>
+                <button onclick="addToDisplay('4')" class="number">4</button>
+                <button onclick="addToDisplay('5')" class="number">5</button>
+                <button onclick="addToDisplay('6')" class="number">6</button>
+                <button onclick="addToDisplay('-')" class="operation">-</button>
+                <button onclick="memoryAdd()" class="memory">M+</button>
+                <button onclick="addToDisplay('7')" class="number">7</button>
+                <button onclick="addToDisplay('8')" class="number">8</button>
+                <button onclick="addToDisplay('9')" class="number">9</button>
+                <button onclick="addToDisplay('*')" class="operation">*</button>
+                <button onclick="memorySubtract()" class="memory">M-</button>
+                <button onclick="addToDisplay('.')" class="number">.</button>
+                <button onclick="addToDisplay('0')" class="number">0</button>
+                <button onclick="calculate()" class="span2 equal">=</button>
+                <button onclick="memoryRecallClear()" class="memory">
+                    MRC
+                </button>
+            </section>
+        </main>
+        <footer class="footer">
+            <strong>&copy; Copyright | Calculator</strong>
+        </footer>
+        <script src="./assets/script.js"></script>
+    </body>
+</html>
