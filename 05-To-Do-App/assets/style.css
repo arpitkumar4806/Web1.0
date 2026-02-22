@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    background-color: whitesmoke;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 6vh;
+    padding: 0 2vh;
+    box-shadow: 0 1px 4px gray;
+}
+
+/* Main */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 88vh;
+}
+
+/* Form Section */
+.todo-form {
+    height: fit-content;
+    width: 90vw;
+    margin: 5vh 0vh;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 12px gray;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.field-group {
+    gap: 1rem;
+}
+
+.field-input {
+    height: 3rem;
+    padding: 1rem 1rem;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.button {
+    height: 3rem;
+    width: 10%;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    background-color: lightgray;
+    box-shadow: 0px 4px 12px lightgray;
+}
+
+.button:hover {
+    background-color: gray;
+    box-shadow: 0px 4px 12px gray;
+}
+
+.button:active {
+    box-shadow: 0px 2px 6px lightgray;
+    transform: translateY(2px);
+}
+
+/* To-Do List Section */
+.todos {
+    height: fit-content;
+    width: 90vw;
+    margin-bottom: 10vh;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 12px gray;
+}
+
+.heading {
+    margin: 1vh;
+}
+
+.todo-list {
+    list-style: none;
+}
+
+.todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 3rem;
+    margin: 1rem;
+    padding: 0rem 0.25rem 0rem 1rem;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+
+.checkbox {
+    height: 1rem;
+    width: 1rem;
+}
+
+.todo-text {
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    width: 80vw;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.delete-button {
+    height: 2.5rem;
+    width: 10vw;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    background-color: lightgray;
+    box-shadow: 0px 4px 12px lightgray;
+}
+
+.delete-button:hover {
+    background-color: firebrick;
+    box-shadow: 0px 4px 12px firebrick;
+}
+
+.delete-button:active {
+    box-shadow: 0px 2px 6px firebrick;
+    transform: translateY(2px);
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+    border-top: 1px solid lightgray;
+}
+
+.footer-text {
+    font-size: medium;
+    font-weight: 500;
+}
