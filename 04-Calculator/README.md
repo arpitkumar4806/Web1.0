@@ -20,4 +20,4 @@ The Simple Calculator is a basic web application that allows users to perform st
 - JavaScript fundamentals
 - DOM manipulation
 - Handling user input
-- Implementing basic mathematical operations using JavaScript
+- Implementing basic mathematical operations using JavaScript.
